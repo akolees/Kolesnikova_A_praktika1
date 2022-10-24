@@ -3,7 +3,7 @@ using System.IO;
 
 namespace HelloApp
 {
-    class Program
+    class Zadanie1
     {
         static void Main(string[] args)
         {
@@ -11,6 +11,7 @@ namespace HelloApp
 
             foreach (DriveInfo drive in drives)
             {
+                Console.WriteLine($"Информация о файловой системе: {drive.DriveFormat}");
                 Console.WriteLine($"Имя диска: {drive.Name}");
                 Console.WriteLine($"Тип: {drive.DriveType}");
                 if (drive.IsReady)
@@ -24,4 +25,3 @@ namespace HelloApp
         }
     }
 }
-
